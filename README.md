@@ -1,3 +1,6 @@
+# Purpose
+This is v1 version, we direct use OTEL_INSTRUMENTATION_AWS_SDK_EXPERIMENTAL_USE_PROPAGATOR_FOR_MESSAGING parameter in .env file
+
 # SQS producer tracing PoC
 
 This Spring Boot application publishes a string to a real AWS SQS queue through
