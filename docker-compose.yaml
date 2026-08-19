@@ -1,0 +1,15 @@
+services:
+  collector:
+    image: public.ecr.aws/aws-observability/aws-otel-collector:latest
+    command: ["--config=/etc/otel-config.yaml"]
+    user: ${LOCAL_UID:-1000}:${LOCAL_GID:-1000}
+    environment:
+      AWS_REGION: ${AWS_REGION}
+      AWS_PROFILE: ${AWS_PROFILE:-default}
+    volumes:
+      - ../sqsreceiver/otel-collector-config.yaml:/etc/otel-config.yaml:ro
+      - ${HOME}/.aws:/home/aoc/.aws:ro
+    ports:
+      - "127.0.0.1:4317:4317"
+      - "127.0.0.1:4318:4318"
+      - "127.0.0.1:13133:13133"

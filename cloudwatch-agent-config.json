@@ -1,0 +1,14 @@
+{
+  "agent": {
+    "region": "eu-west-1"
+  },
+  "metrics": {
+    "namespace": "SqsProducer",
+    "metrics_collected": {
+      "otlp": {
+        "grpc_endpoint": "0.0.0.0:4317",
+        "http_endpoint": "0.0.0.0:4318"
+      }
+    }
+  }
+}
