@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Run SQS Producer with OpenTelemetry",
+            "request": "launch",
+            "mainClass": "com.example.sqssender.SqssenderApplication",
+            "projectName": "sqssender",
+            "cwd": "${workspaceFolder}",
+            "vmArgs": "-javaagent:${workspaceFolder}/opentelemetry-javaagent.jar",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
