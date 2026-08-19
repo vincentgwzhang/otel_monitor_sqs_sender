@@ -1,5 +1,8 @@
 # Purpose
-This is v1 version, we direct use OTEL_INSTRUMENTATION_AWS_SDK_EXPERIMENTAL_USE_PROPAGATOR_FOR_MESSAGING parameter in .env file
+This is v2 version, change for:
+1. Detail write down the meta infor for every SQS message
+2. Tried different propagator (in lunch.json)
+3. Dynamic use cusomize source code
 
 # SQS producer tracing PoC
 
