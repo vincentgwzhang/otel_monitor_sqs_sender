@@ -23,6 +23,6 @@ public class MessageController {
 	@PostMapping
 	@ResponseStatus(HttpStatus.ACCEPTED)
 	public void send() {
-		producer.send("message send time: %s".formatted(LocalDateTime.now().format(formatter)));
+		producer.sendWithW3CTraceContextPropagator("message send time: %s".formatted(LocalDateTime.now().format(formatter)));
 	}
 }

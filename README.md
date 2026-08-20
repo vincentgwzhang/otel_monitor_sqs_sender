@@ -1,8 +1,6 @@
 # Purpose
-This is v2 version, change for:
-1. Detail write down the meta infor for every SQS message
-2. Tried different propagator (in lunch.json)
-3. Dynamic use cusomize source code
+This is v3 version, change for:
+1. Support DD
 
 # SQS producer tracing PoC
 
